@@ -18,9 +18,12 @@ public class Main {
     }
 
     public static void placement(JPanel panel) {
-        JTextField textField = new JTextField(10);
-        textField.setBounds(30, 30, 500, 30);
+        JTextField textField = new JTextField(50);
+        textField.setBounds(100, 20, 165, 50);
         panel.add(textField);
 
+        JButton button = new JButton("+");
+        button.setBounds(20, 10, 100, 50);
+        panel.add(button);
     }
 }

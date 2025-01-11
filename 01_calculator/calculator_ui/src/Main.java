@@ -12,7 +12,15 @@ public class Main {
         frame.setSize(800, 600);
 
         frame.add(panel);
+        placement(panel);
 
         frame.setVisible(true);
+    }
+
+    public static void placement(JPanel panel) {
+        JTextField textField = new JTextField(10);
+        textField.setBounds(30, 30, 500, 30);
+        panel.add(textField);
+
     }
 }

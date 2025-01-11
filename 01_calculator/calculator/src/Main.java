@@ -16,5 +16,36 @@ public class Main {
 
         System.out.println("Enter second number: ");
         double num2 = scanner.nextDouble();
+
+        double result = 0;
+
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                System.out.println("The result is: " + result);
+                break;
+
+            case '-':
+                result = num1 - num2;
+                System.out.println("The result is: " + result);
+                break;
+
+            case '*':
+                result = num1 * num2;
+                System.out.println("The result is: " + result);
+                break;
+
+            case '/':
+                result = num1 / num2;
+                System.out.println("The result is: " + result);
+                break;
+
+            default:
+                System.out.println("Invalid operator");
+                System.exit(0);
+                break;
+        }
+
+        scanner.close();
     }
 }

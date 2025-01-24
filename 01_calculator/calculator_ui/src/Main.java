@@ -1,11 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("calculator");
+        JFrame frame = new JFrame("Calculator");
         JPanel panel = new JPanel();
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,12 +16,16 @@ public class Main {
     }
 
     public static void placement(JPanel panel) {
-        JTextField textField = new JTextField(50);
-        textField.setBounds(100, 20, 165, 50);
+        // Specify a preferred size for the JTextField
+        JTextField textField = new JTextField();
+        textField.setPreferredSize(new Dimension(165, 50)); // width of 165, height of 50
         panel.add(textField);
 
-        JButton button = new JButton("+");
-        button.setBounds(20, 10, 100, 50);
+        JButton button = new JButton("Clear");
+        button.setPreferredSize(new Dimension(100, 50)); // width of 100, height of 50
         panel.add(button);
+
+        // Use a layout manager to respect preferred sizes
+        panel.setLayout(new FlowLayout()); // or any layout manager of your choice
     }
 }

@@ -1,5 +1,7 @@
-import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Main {
     public static void main(String[] args) {
         String username = "admin";
@@ -19,5 +21,6 @@ public class Main {
         else {
             System.out.println("You are not logged in!");
         }
+        sc.close();
     }
 }

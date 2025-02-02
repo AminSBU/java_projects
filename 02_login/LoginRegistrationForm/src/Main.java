@@ -7,7 +7,7 @@ public class Main {
     // Corrected JDBC URL
     private static final String URL = "jdbc:mysql://127.0.0.1:3306/user?useSSL=true";
     private static final String USER = "root";
-    private static final String PASSWORD = "****";
+    private static final String PASSWORD = "1990308902@Omid88";
 
     public static void main(String[] args) {
         System.out.println("Welcome to Application ...");
